@@ -32,8 +32,9 @@ $sql_validate_email = "
 
     $ans = pg_query($conn, $sql);
     if  ($ans) {    
+        //echo user has been created successfully
         echo "<script>alert ('user has been created . Go to login! ')</script>";
-        header('refresh:0;url=http://localhost/pet-store2/src/singin.html');
+        header('refresh:0;url=http://localhost/pet-store2/src/');
     } else {
         echo " error ";
     }}
